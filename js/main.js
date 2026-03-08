@@ -179,6 +179,14 @@
 
             let thumbLink = folioItem.querySelector('.folio-item__thumb-link');
 
+
+        });
+
+           /* bind click event
+        folioItems.forEach(function(folioItem, i) {
+
+            let thumbLink = folioItem.querySelector('.folio-item__thumb-link');
+
             thumbLink.addEventListener('click', function(e) {
 
                 e.preventDefault();
@@ -193,7 +201,7 @@
                 lightBox.init();
             });
 
-        });
+        }); */
 
     };  // end ssPhotoSwipe
 
