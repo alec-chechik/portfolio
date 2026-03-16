@@ -3365,10 +3365,11 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-blog {
-    padding-top : calc(6 * var(--space));
-    padding-bottom: calc(4 * var(--space));
+    padding-top : calc(7.5 * var(--space));
+    padding-bottom     : var(--vspace-1);
     width       : 100%;
     position    : relative;
+    background-color : white;
 }
 
 .s-blog__content {
@@ -3385,13 +3386,16 @@ img.u-pull-left {
 }
 
 .s-blog__text-huge {
+    --space : 1;
+    --text-multiplier : 1;
     --text-huge-size : 15rem;
-    font-size        : var(--text-huge-size);
-    text-align : left;
+    font-size         : calc(var(--text-huge-size) * var(--text-multiplier));
+    text-align : center;
     line-height      : 1;
     letter-spacing   : -0.015em;
     margin-top       : calc(var(--text-huge-size) / 2 * -1.2);
     margin-bottom    : 0;
+    padding-bottom : 0;
     color            : rgb(0, 0, 0);
 }
 
@@ -3405,9 +3409,57 @@ img.u-pull-left {
     font-weight    : 400;
     line-height    : 1;
     letter-spacing : -.01em;
+    text-align : center;
     margin-top     : 0;
     color          : var(--color-2-light);
 }
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * blog
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 1000px) {
+    .s-blog__text-huge {
+        --text-multiplier : 1;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .s-blog__text-huge {
+        --text-multiplier : .84;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .s-blog__text-huge {
+        --text-multiplier : .74;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .s-blog__text-huge {
+        --text-multiplier : .64;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .s-blog__text-huge {
+        --text-multiplier : .58;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .s-blog__text-huge {
+        --text-multiplier : .54;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .s-blog__text-huge {
+        --text-multiplier : .45;
+    }
+}
+
 
 /* ===================================================================
  * # ABOUT
@@ -4075,7 +4127,7 @@ img.u-pull-left {
 
 @media screen and (max-width: 600px) {
     .s-works {
-        padding-top    : var(--vspace-5);
+        padding-top    : var(--vspace-2);
         padding-bottom : var(--vspace-4_5);
     }
 
