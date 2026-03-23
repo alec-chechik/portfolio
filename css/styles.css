@@ -177,7 +177,7 @@
 
     /* others
      */
-    --color-body                   : #d2cfe8;
+    --color-body                   : #ffffff;
     --color-border                 : rgba(0, 0, 0, .08);
     --border-radius                : 3px;
 }
@@ -1963,7 +1963,7 @@ select {
 .ss-custom-select select option {
     padding-left     : 2rem;
     padding-right    : 2rem;
-    background-color : var(--color-body);
+    background-color : var(--color-preloader-bg);
 }
 
 .ss-custom-select select::-ms-expand {
@@ -2712,12 +2712,12 @@ td:last-child {
  * ------------------------------------------------------------------- */
 .text-pretitle {
     font-family   : var(--font-1);
-    font-size     : calc(var(--text-size) * 1.1053);
-    font-weight   : 300;
+    font-size     : calc(var(--text-size) * 3);
+    font-weight   : 500;
     line-height   : var(--vspace-1);
     color         : var(--color-1-dark);
     margin-top    : 0;
-    margin-bottom : var(--vspace-0_25);
+    margin-bottom : var(--vspace-0_75);
     margin-left   : .1em;
     position      : relative;
 }
@@ -2884,7 +2884,7 @@ img.u-pull-left {
     z-index          : 100;
     display          : flex;
     height           : var(--header-height);
-    background-color : var(--color-body);
+    background-color : var(--color-preloader-bg);
     width            : 100%;
     transition       : height 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
     position         : absolute;
@@ -3103,7 +3103,7 @@ img.u-pull-left {
     .s-header__block {
         width            : 100%;
         height           : var(--header-height);
-        background-color : var(--color-body);
+        background-color : var(--color-preloader-bg);
         border-bottom    : 1px solid var(--color-border);
         box-shadow       : var(--box-shadow);
     }
@@ -3119,7 +3119,7 @@ img.u-pull-left {
         transform        : scaleY(0);
         transform-origin : center top;
         padding          : var(--vspace-2) 3.6rem var(--vspace-2);
-        background-color : var(--color-body);
+        background-color : var(--color-preloader-bg);
         border-bottom    : 1px solid var(--color-border);
         box-shadow       : var(--box-shadow);
     }
@@ -3197,7 +3197,7 @@ img.u-pull-left {
 .s-intro {
     display: flex;
     justify-content: center;
-    padding-top : calc(5 * var(--space));
+    padding-top : calc(8 * var(--space));
     width       : 100%;
     position    : relative;
 }
@@ -3228,7 +3228,7 @@ img.u-pull-left {
     line-height    : 1.0998;
     letter-spacing : -.01em;
     margin-top     : 0;
-    color          : white;
+    color          : var(--color-1-dark);
 }
 
 .s-intro__text h3 span {
@@ -3242,7 +3242,7 @@ img.u-pull-left {
     letter-spacing   : -0.015em;
     margin-top       : calc(var(--text-huge-size) / 2 * -1.0);
     margin-bottom    : 0;
-    color            : white;
+    color            : var(--color-black);
 }
 
 /* --------------------------------------------------------------------
@@ -3250,8 +3250,9 @@ img.u-pull-left {
  * -------------------------------------------------------------------- */
 .s-intro__bg {
     aspect-ratio        : 1/1;
-    width               : 50%;
-    background-color    : var(--color-body);
+    width               : 100%;
+    /*margin-top: calc(2 * var(--space));*/
+    background-color    : var(--color-white);
     background-image    : url(../images/intro-bg7.jpg);
     background-repeat   : no-repeat;
     background-position : center;
@@ -3282,10 +3283,10 @@ img.u-pull-left {
 
 @media screen and (max-width: 2560px) {
     .s-intro__text-huge {
-        --text-huge-size : 10rem;
+        --text-huge-size : 15rem;
     }
     .s-intro__bg {
-        width : 60%
+        width : 100%
     }
 }
 
@@ -3294,7 +3295,7 @@ img.u-pull-left {
         --text-huge-size : 10rem;
     }
     .s-intro__bg {
-        width : 60%
+        width : 100%
     }
 }
 
@@ -3303,7 +3304,7 @@ img.u-pull-left {
         --text-huge-size : 10vw;
     }
     .s-intro__bg {
-        width : 80%
+        width : 100%
     }
 }
 
@@ -3477,7 +3478,7 @@ img.u-pull-left {
 }
 
 .s-about__block {
-    margin-bottom : var(--vspace-2);
+    margin-bottom : var(--vspace-4);
 }
 
 .s-about__timeline {
@@ -3768,7 +3769,7 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 .s-works {
     padding-top      : calc(3 * var(--space));
-    padding-bottom   : calc(3 * var(--space));
+    padding-bottom   : calc(1 * var(--space));
     background-color : white;
 }
 
@@ -4159,10 +4160,11 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-footer {
-    padding-top    : calc(6 * var(--space));
+    padding-top    : calc(4 * var(--space));
     padding-bottom : var(--vspace-2_5);
     font-weight    : 300;
     position       : relative;
+    background-color : var(--color-preloader-bg);
 }
 
 .s-footer .text-subtitle {
