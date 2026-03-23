@@ -2732,6 +2732,8 @@ td:last-child {
     letter-spacing    : -0.02em;
     color             : var(--color-text-dark);
     margin-top        : 0;
+    padding-top : 5rem;
+    text-align: center;
 }
 
 .text-subtitle {
@@ -3366,10 +3368,11 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 .s-blog {
     padding-top : calc(7.5 * var(--space));
-    padding-bottom     : var(--vspace-1);
     width       : 100%;
     position    : relative;
     background-color : white;
+    display: flex;
+    flex-direction: column;
 }
 
 .s-blog__content {
@@ -3380,7 +3383,6 @@ img.u-pull-left {
     z-index    : 1;
     width      : 100%;
     text-align : left;
-    position   : absolute;
     top        : 0;
     left       : 0;
 }
@@ -3767,9 +3769,20 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-works {
-    padding-top      : calc(3 * var(--space));
+    padding-top      : calc(2 * var(--space));
     padding-bottom   : calc(3 * var(--space));
     background-color : white;
+}
+
+.s-works h3 {
+    text-align : center;
+    font-family    : var(--font-2);
+    font-size      : var(--text-md);
+    font-weight    : 400;
+    line-height    : 1;
+    letter-spacing : -.01em;
+    margin-top     : 0;
+    color          : var(--color-2-light);
 }
 
 /* ------------------------------------------------------------------- 
@@ -4129,6 +4142,10 @@ img.u-pull-left {
     .s-works {
         padding-top    : var(--vspace-2);
         padding-bottom : var(--vspace-4_5);
+    }
+
+    .s-works h3 {
+    font-size      : calc(0.5 var(--text-md));
     }
 
     .folio-item__title {
