@@ -33,16 +33,20 @@
         }
     })
     .add({
-        targets: ['.animate-on-load'],
-        translateY: [100, 0],
-        opacity: [0, 1],
-        delay: anime.stagger(100)
-        
-    })
+        targets: '.s-header',
+        translateY: [-100, 0],
+        opacity: [0, 1]
+    }, '-=200')
     .add({
         targets: '.s-intro__bg',
         opacity: [0, 1],
         duration: 1000,
+    })
+    .add({
+        targets: ['.animate-on-load'],
+        translateY: [100, 0],
+        opacity: [0, 1],
+        delay: anime.stagger(400)
     });
 
 
