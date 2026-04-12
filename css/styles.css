@@ -2711,9 +2711,9 @@ td:last-child {
  * ## theme-specific typography classes
  * ------------------------------------------------------------------- */
 .text-pretitle {
-    font-family   : var(--font-1);
+    font-family   : var(--font-2);
     font-size     : calc(var(--text-size) * 3);
-    font-weight   : 500;
+    font-weight   : 700;
     line-height   : var(--vspace-1);
     color         : var(--color-1-dark);
     margin-top    : 0;
@@ -3255,7 +3255,7 @@ img.u-pull-left {
     width               : 100%;
     /*margin-top: calc(2 * var(--space));*/
     background-color    : var(--color-white);
-    background-image    : url(../images/intro-bg7.jpg);
+    background-image    : url(../images/alec-portrait.png);
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
@@ -3775,6 +3775,12 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 .s-works {
     padding-top      : calc(1 * var(--space));
+    padding-bottom   : calc(1 * var(--space));
+    background-color : white;
+}
+
+.s-works2 {
+    padding-top      : calc(3 * var(--space));
     padding-bottom   : calc(1 * var(--space));
     background-color : white;
 }
