@@ -3416,6 +3416,10 @@ img.u-pull-left {
     color          : var(--color-2-light);
 }
 
+.s-blog__text h1 {
+    text-align : center;
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * blog
@@ -3783,6 +3787,11 @@ img.u-pull-left {
     letter-spacing : -.01em;
     margin-top     : 0;
     color          : var(--color-2-light);
+}
+
+.s-works__text h1 {
+    text-align : center;
+    font-size: 5em;
 }
 
 /* ------------------------------------------------------------------- 
