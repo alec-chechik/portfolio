@@ -108,85 +108,131 @@
                         <a href="https://youtu.be/g-ue8Pq3psM?si=BK_DEfKlL1t6DYLq" target="_blank"><h1> 
                         Totentanz</h1></a>
                         <h3><b>Technical Director</b>| Godot | May 2026 - Present</h3>
-                    <a href="images/totentanz/18fpsAnim.gif"> 
-                            <img src="images/totentanz/18fpsAnim.gif" 
-                            srcset="images/totentanz/18fpsAnim.gif 1000w, 
-                            images/totentanz/18fpsAnim.gif 500w" 
-                            sizes="(max-width: 1000px) 100vw, 1000px" alt="">
-                    </a>
-
-                
-                <p class="drop-cap">A productivity game set in a dark fantasy setting with early PSX inspired graphics. We focused on performance optimization in terms of assets! Since there won’t be any real time player movement, only shot changes, there was no need to include actual 3d models of the environments.
-                </p>
-
-                <h2><b>Graphics</b></h2>
-                The game is focused on...
-
-                <h3>Time of Day Transitions</h3>
-                <a href="images/totentanz/dayToSunset.gif"> 
-                            <img src="images/totentanz/dayToSunset.gif" 
-                            srcset="images/totentanz/dayToSunset.gif 1000w, 
-                            images/totentanz/dayToSunset.gif 500w" 
-                            sizes="(max-width: 1000px) 100vw, 1000px" alt="">
-                 </a>
-                 
-                 <figure>
-                        <a href="images/totentanz/TODGradient_01.png"> 
-                            <img src="images/totentanz/TODGradient_01.png" 
-                            srcset="images/totentanz/TODGradient_01.png 1000w, 
-                            images/totentanz/TODGradient_01.png 500w" 
-                            sizes="(max-width: 1000px) 100vw, 1000px" alt="">
-                         </a>
-                        <figcaption>
-                            Added shaders that blend up to 5 in-engine gradients evenly. More can be added as needed.
-                        </figcaption>
-                    </figure>
-
-                <figure>
-                        <a href="images/totentanz/TODGradient_02.png"> 
-                            <img src="images/totentanz/TODGradient_02.png" 
-                            srcset="images/totentanz/TODGradient_02.png 1000w, 
-                            images/totentanz/TODGradient_02.png 500w" 
-                            sizes="(max-width: 1000px) 100vw, 1000px" alt="">
-                         </a>
-                        <figcaption>
-                            Scaled down UV.x to 0 so we only see one horizontal section.
-                        </figcaption>
-                    </figure>
-
-                 <figure>
-                        <a href="images/totentanz/TODShowcase.gif"> 
-                            <img src="images/totentanz/TODShowcase.gif" 
-                            srcset="images/totentanz/TODShowcase.gif 1000w, 
-                            images/totentanz/TODShowcase.gif 500w" 
-                            sizes="(max-width: 1000px) 100vw, 1000px" alt="">
-                         </a>
-                        <figcaption>
-                            Pan UV.x to transition between times of day!
-                        </figcaption>
-                    </figure>
-
-                [Insert shaders]
-                <figure>
-                        <a href="images/totentanz/TTZ_Fog.png"> 
+                    <p class="drop-cap">A productivity game where you progress a dark fantasy story by doing real life work. It is meant to be a companion app used to keep track of your tasks, work sessions, and calendar! All content displayed below is a work in progress.
+                    </p>
+                    <a href="images/totentanz/TTZ_Fog.png"> 
                             <img src="images/totentanz/TTZ_Fog.png" 
                             srcset="images/totentanz/TTZ_Fog.png 1000w, 
                             images/totentanz/TTZ_Fog.png 500w" 
                             sizes="(max-width: 1000px) 100vw, 1000px" alt="">
-                         </a>
-                        <figcaption>
-                            Fog Tests [Insert shader graph]
-                        </figcaption>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="column lg-12 tab-12">
+                    <h2><b>Graphics</b></h2>
+                    <p>
+                        Gameplay happens within the panels of a triptych, which also serves as the main UI. Since it will be running while players have other apps open, optimization is one of our top priorities!
+                        The style is inspired by early PSX graphics for both its nostalgic style and optimization, keeping our character poly counts low and texture sets small.
+                    </p>
+                </div>
+
+                <div class="column lg-6 tab-12">
+                    <a href="images/totentanz/render layers.png"> 
+                                <img src="images/totentanz/render layers.png" 
+                                srcset="images/totentanz/render layers.pngsAnim.gif 1000w, 
+                                images/totentanz/render layers.png 500w" 
+                                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                    </a>
+                </div>
+
+                 <div class="column lg-6 tab-12">
+                    <a href="images/totentanz/render layers_dithered.png"> 
+                                <img src="images/totentanz/render layers_dithered.png" 
+                                srcset="images/totentanz/render layers_dithered.png 1000w, 
+                                images/totentanz/render layers_dithered.png 500w" 
+                                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                    </a>
+                </div>
+
+                <div class="column lg-12 tab-12">
+                    <p>
+                        Since there won’t be free-roaming player movement, we decided to use pre-rendered backgrounds to allow for artistic freedom without the processing load of complex light systems and simulations. For greater immersion, we also developed a system that allows dynamic lighting with 2D backgrounds when needed (I.E. the light of a character’s lantern interacting with the background).
+                    </p>
+
+                    <h3><b>Time of Day Transitions</b></h3>
+                    <p>
+                        The sky is a simple gradient rendered behind background elements. Since the player will be able to change the time of day at will, I created a shader that blends multiple in-engine gradients so we can smoothly transition between them!
+                    </p>
+                    <a href="images/totentanz/dayToSunset.gif"> 
+                                <img src="images/totentanz/dayToSunset.gif" 
+                                srcset="images/totentanz/dayToSunset.gif 1000w, 
+                                images/totentanz/dayToSunset.gif 500w" 
+                                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                    </a>
+                    
+                    <figure>
+                            <a href="images/totentanz/TODGradient_01.png"> 
+                                <img src="images/totentanz/TODGradient_01.png" 
+                                srcset="images/totentanz/TODGradient_01.png 1000w, 
+                                images/totentanz/TODGradient_01.png 500w" 
+                                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                            </a>
+                            <figcaption>
+                                Added shaders that blend up to 5 in-engine gradients evenly. More can be added as needed.
+                            </figcaption>
+                        </figure>
+
+                    <figure>
+                            <a href="images/totentanz/TODGradient_02.png"> 
+                                <img src="images/totentanz/TODGradient_02.png" 
+                                srcset="images/totentanz/TODGradient_02.png 1000w, 
+                                images/totentanz/TODGradient_02.png 500w" 
+                                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                            </a>
+                            <figcaption>
+                                Scaled down UV.x to 0 so we only see one horizontal section.
+                            </figcaption>
+                        </figure>
+
+                    <figure>
+                            <a href="images/totentanz/TODShowcase.gif"> 
+                                <img src="images/totentanz/TODShowcase.gif" 
+                                srcset="images/totentanz/TODShowcase.gif 1000w, 
+                                images/totentanz/TODShowcase.gif 500w" 
+                                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                            </a>
+                            <figcaption>
+                                Pan UV.x to transition between times of day!
+                            </figcaption>
+                        </figure>
+                    
+                    <figure>
+                            <a href="images/totentanz/gradientblend_shader.png"> 
+                                <img src="images/totentanz/gradientblend_shader.png" 
+                                srcset="images/totentanz/gradientblend_shader.png 1000w, 
+                                images/totentanz/gradientblend_shader.png 500w" 
+                                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                            </a>
+                            <figcaption>
+                                Spatial shader code.
+                            </figcaption>
                     </figure>
-            
-                [Insert ocean WIP gifs]
 
-                 <!-- # tools section ================================================== -->
-                <h2><b>Tools</b></h2>
-                Here are some of the tools I developed for the game!
+                    [Insert shaders]
+                    <figure>
+                            <a href="images/totentanz/TTZ_Fog.png"> 
+                                <img src="images/totentanz/TTZ_Fog.png" 
+                                srcset="images/totentanz/TTZ_Fog.png 1000w, 
+                                images/totentanz/TTZ_Fog.png 500w" 
+                                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                            </a>
+                            <figcaption>
+                                Fog Tests [Insert shader graph]
+                            </figcaption>
+                        </figure>
+                
+                    [Insert ocean WIP gifs]
 
-                <h3>Blender Render Pass Exporter</h3>
-                Addon which uses the compositor to save several render passes with our prerendered sprite configurations and naming convention.
+                    <!-- # tools section ================================================== -->
+                    <h2><b>Tools</b></h2>
+                    Here are some of the tools I developed for the game!
+
+                    <h3>Blender Render Pass Exporter</h3>
+                    <p>
+                        To save time when rendering multiple passes at once, I created a Blender addon that renders preset passes with our pre-rendered sprite conventions at the click of a button.
+                    </p>
+                </div>
                 
             <div class="row">
                 <div class="column lg-6 tab-12">
@@ -215,19 +261,26 @@
                         sizes="(max-width: 1000px) 100vw, 1000px" alt="">
                         </a>
 
-                <h3>Godot Material & Animation Importer</h3>
-                <figure>
-                        <a href="images/totentanz/TTZ_godotAutoImporter.gif"> 
-                            <img src="images/totentanz/TTZ_godotAutoImporter.gif" 
-                            srcset="images/totentanz/TTZ_godotAutoImporter.gif 1000w, 
-                            images/totentanz/TTZ_godotAutoImporter.gif 500w" 
-                            sizes="(max-width: 1000px) 100vw, 1000px" alt="">
-                         </a>
+                    <h3>Godot Material & Animation Importer</h3>
+                    <figure>
+                            <a href="images/totentanz/TTZ_godotAutoImporter.gif"> 
+                                <img src="images/totentanz/TTZ_godotAutoImporter.gif" 
+                                srcset="images/totentanz/TTZ_godotAutoImporter.gif 1000w, 
+                                images/totentanz/TTZ_godotAutoImporter.gif 500w" 
+                                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                            </a>
 
-                        <figcaption>
-                            Automatically
-                        </figcaption>
+                            <figcaption>
+                                Automatically
+                            </figcaption>
                     </figure>
+
+                    <a href="images/totentanz/18fpsAnim.gif"> 
+                            <img src="images/totentanz/18fpsAnim.gif" 
+                            srcset="images/totentanz/18fpsAnim.gif 1000w, 
+                            images/totentanz/18fpsAnim.gif 500w" 
+                            sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                    </a>
                 </div>
             </div>
                 <!-- end tools  -->
