@@ -64,7 +64,32 @@
 
     }; // end ssPreloader
 
+    /* read more button
+    * ---------------------------------------------------- */ 
+    document.querySelectorAll('.read-more-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        // Find the parent content block of the clicked button
+        const container = this.closest('.content-block');
+        
+        // Find the dots and hidden text inside this specific block
+        const dots = container.querySelector('.dots');
+        const moreText = container.querySelector('.more-text');
 
+        if (dots.style.display === "none") {
+        // Collapse text
+        dots.style.display = "inline";
+        moreText.style.display = "none";
+        this.textContent = "See More";
+        } else {
+        // Expand text
+        dots.style.display = "none";
+        moreText.style.display = "inline";
+        this.textContent = "See Less";
+        }
+    });
+    });
+
+    // end read more button
 
    /* mobile menu
     * ---------------------------------------------------- */ 
