@@ -222,14 +222,18 @@
                     <!-- end TOD transitions -->
                     <!-- # tools section ================================================== -->
                     <hr>
-                    <h2><b>Tools: Blender Render Pass Exporter</b></h2>
+                    <h2><b>Blender Render Pass Exporter</b> | Python</h2>
                     <p>
-                        <a href="https://github.com/alec-chechik/Blender_Render_Exporter"><b>GitHub Repo Link.</b></a>
+                        <a href="https://github.com/alec-chechik/Blender_Render_Exporter"><b>GitHub Repo Link</b></a>
                         <br>
-                        To save time when rendering multiple passes at once, I created a Blender addon that renders preset passes with our pre-rendered sprite conventions at the click of a button.
+                        To save time when rendering multiple passes at once, I created a Blender addon that renders preset passes with our pre-rendered sprite conventions at the click of a button. Originally, you'd have to choose the correct settings, rename, and save every render pass individually.
+                    <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/SxWWwDyojj4?si=QSsbjWXHDHW1_z95" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <p>
+                        A time comparison between the original pipeline and the addon's process: <b>what would originally take around 1 minute 22 seconds per scene now takes only 9 seconds, a nearly 90% time save!</b>
                     </p>
                 </div>
-            
                     <div class="column lg-12 tab-12">
                         <figure>
                             <a href="images/totentanz/blenderRenderExport_02.png"> 
@@ -255,9 +259,9 @@
                                 sizes="(max-width: 1000px) 100vw, 1000px" alt="">
                         </a>
 
-                        <h2><b>Godot Material & Animation Importer</b></h2>
+                        <h2><b>Godot Material & Animation Importer</b> | GDSCript</h2>
                         <p>
-                            This plugin trivializes the process of importing 3D animations and creating sprite materials into a simple drag and drop!
+                            This plugin streamlines the process of importing 3D FBX animations and creating sprite materials into a simple drag and drop!
                         <br>
                             Upon detecting an image file in a specified folder, it creates a subfolder with the scene name, batch moves the images there, and creates a material for each depth of the scene (foreground, midground, background). It then detects the images’ suffix to plug the textures into their corresponding material slot.
                         </p>
@@ -274,7 +278,7 @@
                                 </figcaption>
                         </figure>
                         <p>
-                            The plugin also streamlines the process of importing FBX animations made in Maya. Originally, you’d have to import animations one by one by changing the import settings, saving the animation file to disk, deleting the FBX, and loading it into the animation library.
+                            Originally, you’d have to import animations one by one by changing the import settings, saving the animation file to disk, deleting the FBX, and loading it into the animation library.
                         <br>
                             Upon detecting a new FBX file in the animations folder, the plugin extracts the animation into the corresponding character subfolder with our determined fps, and interpolation mode. If the corresponding option is selected, it then deletes the FBX after importing.
                         </p>
